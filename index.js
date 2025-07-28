@@ -4,6 +4,10 @@ for (let i = 0; i < copyBtns.length; i++) {
     function copyToClipboard() {
         navigator.clipboard.writeText(copyBtn.id)
         console.log(copyBtn.id)
+        copyBtn.innerHTML = "Copied!"
+        setTimeout(function() {
+            copyBtn.innerHTML = "Copy Midi"
+        }, 1000);
     }
     copyBtn.onclick = copyToClipboard
 }
