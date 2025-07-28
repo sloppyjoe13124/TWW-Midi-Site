@@ -57,4 +57,5 @@ body {
     color: #665c31;
     border: none;
     cursor: pointer;
+    min-width: 85px;
 }
